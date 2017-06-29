@@ -22,7 +22,7 @@ public class findElement {
 		//el.click();
 	 drv.manage().window().maximize();
 		
-		List<WebElement> elList = drv.findElement(By.xpath(".//*[@id='menu-top']/li"));
+		List<WebElement> elList = drv.findElements(By.xpath(".//*[@id='menu-top']/li"));
 		System.out.println("Total element in the list are " + elList.size());
 		
 		Iterator<WebElement> i1 = elList.iterator();

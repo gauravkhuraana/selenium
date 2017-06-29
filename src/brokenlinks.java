@@ -24,7 +24,7 @@ public class brokenlinks {
 		drv.get("http:\\www.google.com");
 		drv.manage().window().maximize();
 		
-		List<WebElement> links = drv.findElement(By.tagName("a"));
+		List<WebElement> links = drv.findElements(By.tagName("a"));
 		
 		System.out.println("The number of links are " + links.size());
 	

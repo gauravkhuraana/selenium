@@ -58,6 +58,7 @@ public class testNG implements ITestListener{
 	public void setup()
 	{
 		System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+	//	selenium.setSpeed("2000");
 
 	}
 	@Test(enabled=false)
@@ -66,9 +67,10 @@ public class testNG implements ITestListener{
 
 
 		drv = new ChromeDriver();
+		
         drv.get("http://udzial.com");
 		drv.findElement(By.id("emailid")).sendKeys("hello");
-		
+	
 		//acha ji
 	}
 	
@@ -133,6 +135,7 @@ public class testNG implements ITestListener{
  	public void test10()
 	{
 		System.out.println("test10");
+		
 	}	
 }
 
