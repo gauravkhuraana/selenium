@@ -4,7 +4,7 @@
   <test name="Test">
 
   <classes>
-  <class name="testfirst.ElementPresence"/>
+  <class name="test.java.testfirst.ElementPresence"/>
   </classes>
   
   </test> <!-- Test -->
