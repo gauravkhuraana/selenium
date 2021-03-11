@@ -3,7 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="zoomInZoomOut">
+      <class name="test.java.zoomInZoomOut">
         <methods>
           <include name="exit"/>
           <include name="main"/>
