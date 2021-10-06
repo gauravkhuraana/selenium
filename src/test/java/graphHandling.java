@@ -1,8 +1,5 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -50,7 +47,7 @@ public class graphHandling {
     }
 
     @Test
-    public void graph3() throws InterruptedException {
+    public void graph2() throws InterruptedException {
 
 
         List<WebElement> graphList=
@@ -68,6 +65,32 @@ public class graphHandling {
         }
     }
 
+    @Test
+    public void graph2AnotherWay() throws InterruptedException {
+
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        WebElement element = driver.findElement(By.xpath("//div[@class=\"p6xhrd\"]"));
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+//        List<WebElement> graphList=
+//                driver.findElements(By.xpath("((//div[@class='uch-xa'])[2]//span)[1]"));
+//        //  List<WebElement> graphList=
+        //        driver.findElements(By.xpath("//div[@jsname='EMtBNe']"));
+
+
+        Actions act = new Actions(driver);
+//        for(WebElement e:graphList)
+//        {
+            for (int i =0; i<element.getLocation().getX();i++)
+            {
+                 act.moveByOffset (1,0).build().perform();
+                String text = driver.findElement(By.xpath("//div[@class=\"p6xhrd\"]")).getText();
+                System.out.println(text);
+            }
+
+        //}
+    }
+
     //table[@class="swWWne"]//tr/td
 
     @AfterMethod
@@ -76,7 +99,7 @@ public class graphHandling {
         driver.quit();
     }
 
-    public void handlingGraph()
+    public void handlingGraph3()
     {
 
         List<WebElement> thirdGraph = driver.findElements(By.xpath("//*[local-name()='svg' and @class='uch-psvg'])[3]"));
