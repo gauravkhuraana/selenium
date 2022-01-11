@@ -1,9 +1,12 @@
 
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.annotations.BeforeTest;
@@ -17,9 +20,8 @@ WebDriver drv;
 	@BeforeTest
 	public void setup() throws InterruptedException
 	{
-		System.setProperty("webdriver.gecko.driver", "D:\\software\\geckodriver-v0.11.1-win64\\geckodriver.exe");
-
-		drv = new FirefoxDriver();
+        WebDriverManager.chromedriver().setup();
+		drv = new ChromeDriver();
 		drv.get("http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/complete_examples.html");
      } 	
 	
@@ -28,8 +30,9 @@ WebDriver drv;
 	{
 		JavascriptExecutor js = (JavascriptExecutor) drv;
 		WebElement element = drv.findElement(By.xpath(".//*[@id='mCSB_3_container']/p[3]"));
-		
+
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
+		element.click();
 	}
 	
 

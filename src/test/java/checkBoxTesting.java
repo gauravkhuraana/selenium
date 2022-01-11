@@ -29,7 +29,9 @@ public class checkBoxTesting {
     
     
     Assert.assertEquals("Success - Check box is checked", successText);
-    
+
+
+
     WebElement chkbox1=drv.findElement(By.xpath("(//*[@class='cb1-element'])[1]"));
     WebElement chkbox2=drv.findElement(By.xpath("(//*[@class='cb1-element'])[2]"));
     WebElement chkbox3=drv.findElement(By.xpath("(//*[@class='cb1-element'])[3]"));
