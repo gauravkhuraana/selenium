@@ -1,5 +1,5 @@
 
-
+// How to check if all links on a website are running fine (returning 2** Messages) Rather than 4** or 5** error messages via selenium / URL / HttpURLConnection
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
