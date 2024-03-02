@@ -1,6 +1,6 @@
 
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,7 +22,6 @@ public class untrustedSite {
 		
 	//	DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
 		//cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-		WebDriverManager.chromedriver().setup();
 		WebDriver drv = new ChromeDriver();
 
 		FirefoxProfile pf = new FirefoxProfile();

@@ -2,7 +2,7 @@
 
 import java.util.List;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,7 +18,6 @@ public class CalendarHandling {
 		//System.setProperty("webdriver.gecko.driver", "D:\\software\\geckodriver-v0.11.1-win64\\geckodriver.exe");
 		//DesiredCapabilities cap = DesiredCapabilities.firefox();
 
-		WebDriverManager.firefoxdriver().setup();
 
 		//cap.setCapability("marionette", true);
 		WebDriver driver = new FirefoxDriver();

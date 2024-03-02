@@ -12,7 +12,7 @@ public class baseSetup {
 		@BeforeClass
 		public void setup(String s)
 		{
-			System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+		
 
 			drv = new ChromeDriver();
 			drv.get("");

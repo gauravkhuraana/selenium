@@ -1,6 +1,6 @@
 
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +19,6 @@ public class checkBoxTesting {
 	{
 	  //  System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
 
-        WebDriverManager.chromedriver().setup();
 		WebDriver drv = new ChromeDriver();
     drv.get("http://www.seleniumeasy.com/test/basic-checkbox-demo.html");
     drv.manage().window().maximize();

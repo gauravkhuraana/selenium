@@ -1,6 +1,6 @@
 
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,7 +9,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
-;
 
 public class dragAndDropTesting {
 
@@ -22,7 +21,6 @@ public class dragAndDropTesting {
 //		DesiredCapabilities cap = DesiredCapabilities.firefox();
 //		cap.setCapability("marionette", true);
 
-		WebDriverManager.chromedriver().setup();
 		WebDriver drv = new ChromeDriver();
 		
 		/*System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
@@ -39,6 +37,8 @@ public class dragAndDropTesting {
     
     
 	act.clickAndHold(Drag1);
+
+	// this can be used for mouse hover as well
 	act.moveToElement(target1);
 	act.release().build().perform();
 	

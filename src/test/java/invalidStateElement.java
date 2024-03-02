@@ -14,7 +14,7 @@ public class invalidStateElement {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		//System.setProperty("webdriver.chrome.driver","D:\\software\\chromedriver_win32\\chromedriver.exe");
+		//
 		
 		//System.setProperty("webdriver.gecko.driver", "D:\\software\\geckodriver-v0.11.1-win64\\geckodriver.exe");
 		//System.setProperty("webdriver.ie.driver", "D:\\software\\IEDriverServer_x64_2.53.1\\iedriverserver.exe");

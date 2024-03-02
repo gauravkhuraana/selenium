@@ -18,7 +18,7 @@ public class scrolls {
 	@BeforeClass
 	public void setup()
 	{
-		System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+	
 
 		drv = new ChromeDriver();
 		drv.get("http://gauravkhurana.in/gaurav-khurana-photography/");

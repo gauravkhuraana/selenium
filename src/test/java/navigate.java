@@ -1,6 +1,6 @@
 
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -14,7 +14,6 @@ public class navigate {
 		// TODO Auto-generated method stub
 		
 
-		WebDriverManager.chromedriver().setup();
 		WebDriver drv = new ChromeDriver();
 
 

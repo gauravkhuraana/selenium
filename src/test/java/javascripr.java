@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -29,7 +29,6 @@ public class javascripr {
 			//cap.setCapability("marionette", true);
 			
 			//JavaScriptError.addExtension(pf);
-			WebDriverManager.chromedriver().setup();
 			WebDriver drv = new ChromeDriver();
 
 			drv.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

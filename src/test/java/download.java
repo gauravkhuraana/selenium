@@ -1,7 +1,7 @@
 
 import java.util.concurrent.TimeUnit;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,7 +18,6 @@ public class download {
 //		System.setProperty("webdriver.gecko.driver", "D:\\software\\geckodriver-v0.11.1-win64\\geckodriver.exe");
 //
 //		cap.setCapability("marionette", true);
-		WebDriverManager.firefoxdriver().setup();
 
 		WebDriver drv = new FirefoxDriver();
 

@@ -21,7 +21,6 @@ public class brokenlinks {
 	static public  void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		System.setProperty("webdriver.chrome.driver","D:\\software\\chromedriver_win32\\chromedriver.exe" );
 		WebDriver drv = new ChromeDriver();
 		
 		drv.get("http:\\www.google.com");

@@ -2,7 +2,9 @@
 
 import java.util.concurrent.TimeUnit;
 
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -25,8 +27,9 @@ public class zoomInZoomOut {
 		//drv = new FirefoxDriver(cap);
 		//String url = "http://seleniumpractise.blogspot.in/2016/08/how-to-handle-calendar-in-selenium.html";
 		//drv.get(url);
-		System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
 
+		drv=new ChromeDriver();
 		drv = new ChromeDriver();
 		drv.get("http://www.google.com");
 		drv.manage().window().maximize();
@@ -62,14 +65,21 @@ public class zoomInZoomOut {
 		Thread.sleep(1000);
 
 	}
-	
+
+    @Test
+	public void zoomOutViaJavaScriptExecutor() throws InterruptedException {
+		JavascriptExecutor js = (JavascriptExecutor)drv;
+		js.executeScript("document.body.style.zoom='0.2'");
+		Thread.sleep(3000);
+	}
 	public  void default1() throws InterruptedException
 	{
 		drv.findElement(By.tagName("html")).sendKeys(Keys.chord(Keys.CONTROL,"0"));
 		Thread.sleep(1000);
 
 	}
-	
+
+
 	
 	@AfterClass
 	public void exit()

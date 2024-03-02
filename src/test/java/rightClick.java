@@ -1,6 +1,6 @@
 
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +22,6 @@ public class rightClick {
 		
 //		DesiredCapabilities cap = DesiredCapabilities.internetExplorer();
 
-		WebDriverManager.chromedriver().setup();
 		WebDriver drv = new ChromeDriver();
 
 		//cap.setCapability("marionette", true);*/

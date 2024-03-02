@@ -16,7 +16,7 @@ public class ajaxAuto {
 	@BeforeTest
 	public void setup()
 	{
-		System.setProperty("webdriver.chrome.driver","D:\\software\\chromedriver_win32\\chromedriver.exe");
+		
 		
 		
 		

@@ -24,7 +24,7 @@ public class getWebElementScreenshot {
 	@BeforeClass
 	public void beforeSetup() throws IOException
 	{
-		System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+	
 		drv = new ChromeDriver();
 		drv.get("http://www.bollywoodhungama.com/news/bollywood/aamir-khan-responds-pr-sondhis-allegations-portrayal-dangal/?ref=yfp");
 		

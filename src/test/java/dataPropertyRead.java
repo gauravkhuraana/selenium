@@ -21,7 +21,7 @@ public class dataPropertyRead {
 		Properties prop = new Properties();
 		prop.load(fs);
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+	
 
 		WebDriver drv = new ChromeDriver();
 		drv.get(prop.getProperty("URL"));

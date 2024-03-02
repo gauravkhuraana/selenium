@@ -2,7 +2,7 @@
 
 import java.util.List;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -50,7 +50,7 @@ public class webTable {
 		@Test
 	    public boolean anotherWayWhenCountIsFixed(String value) {
 
-			WebDriverManager.chromedriver().setup();
+			;
 			driver = new ChromeDriver();
 
 			driver.get("https://www.w3schools.com/html/html_tables.asp");

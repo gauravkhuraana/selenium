@@ -2,7 +2,6 @@
 
 import java.util.List;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,12 +11,10 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class datePicker {
 
-	public static void main(String[] args) throws InterruptedException {
+	public void Test() {
 		// TODO Auto-generated method stub
 
-		WebDriverManager.firefoxdriver().setup();
 		WebDriver drv = new FirefoxDriver();
-		System.setProperty("webdriver.gecko.driver", "D:\\software\\geckodriver-v0.11.1-win64\\geckodriver.exe");
 		//DesiredCapabilities cap = DesiredCapabilities.firefox();
 		//cap.setCapability("marionette", true);
 		//WebDriver drv = new FirefoxDriver(cap);

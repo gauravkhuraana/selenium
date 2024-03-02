@@ -1,4 +1,4 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.apache.poi.ss.formula.functions.T;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -17,7 +17,6 @@ public class windowHandles {
     @BeforeTest()
      public void setup()
      {
-        WebDriverManager.chromedriver().setup();
         drv = new ChromeDriver();
 
      }

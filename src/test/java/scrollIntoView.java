@@ -1,7 +1,6 @@
 
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -20,7 +19,7 @@ WebDriver drv;
 	@BeforeTest
 	public void setup() throws InterruptedException
 	{
-        WebDriverManager.chromedriver().setup();
+        ;
 		drv = new ChromeDriver();
 		drv.get("http://manos.malihu.gr/repository/custom-scrollbar/demo/examples/complete_examples.html");
      } 	
