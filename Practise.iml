@@ -21,28 +21,4 @@
       <excludeFolder url="file://$MODULE_DIR$/.idea/sonarlint/securityhotspotstore" />
     </content>
   </component>
-  <component name="EclipseModuleManager">
-    <libelement value="file://$MODULE_DIR$/../../software/selenium-server-standalone-3.0.1.jar" />
-    <libelement value="file://$MODULE_DIR$/../../software/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/poi-3.16-beta1.jar" />
-    <libelement value="file://$MODULE_DIR$/../../software/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/poi-examples-3.16-beta1.jar" />
-    <libelement value="file://$MODULE_DIR$/../../software/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/poi-excelant-3.16-beta1.jar" />
-    <libelement value="file://$MODULE_DIR$/../../software/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/poi-ooxml-3.16-beta1.jar" />
-    <libelement value="file://$MODULE_DIR$/../../software/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/poi-ooxml-schemas-3.16-beta1.jar" />
-    <libelement value="file://$MODULE_DIR$/../../software/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/poi-scratchpad-3.16-beta1.jar" />
-    <libelement value="file://$MODULE_DIR$/../../software/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/lib/commons-codec-1.10.jar" />
-    <libelement value="file://$MODULE_DIR$/../../software/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/lib/commons-collections4-4.1.jar" />
-    <libelement value="file://$MODULE_DIR$/../../software/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/lib/commons-logging-1.2.jar" />
-    <libelement value="file://$MODULE_DIR$/../../software/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/lib/junit-4.12.jar" />
-    <libelement value="file://$MODULE_DIR$/../../software/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/ooxml-lib/curvesapi-1.04.jar" />
-    <libelement value="file://$MODULE_DIR$/../../software/poi-bin-3.16-beta1-20161120/poi-3.16-beta1/ooxml-lib/xmlbeans-2.6.0.jar" />
-    <libelement value="file://$MODULE_DIR$/../../software/opencsv-2.3.jar/opencsv-2.3.jar" />
-    <libelement value="file://$MODULE_DIR$/../../software/JSErrorCollector-master/JSErrorCollector-master/dist/JSErrorCollector-0.6.jar" />
-    <conelement value="org.testng.TESTNG_CONTAINER" />
-    <src_description expected_position="0">
-      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
-    </src_description>
-  </component>
-  <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="351d1e9b-083e-4cf6-a7d2-7a846c056646" />
-  </component>
 </module>

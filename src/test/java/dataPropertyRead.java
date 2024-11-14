@@ -9,6 +9,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 ;
 
 public class dataPropertyRead {
@@ -16,14 +17,19 @@ public class dataPropertyRead {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		File fl = new File("C:\\Users\\Gaurav.Khurana\\workspace\\Practise\\dataFile.properties");
+		File fl = new File("./dataFile.properties");
 		FileInputStream fs = new FileInputStream(fl);
 		Properties prop = new Properties();
 		prop.load(fs);
-		
-	
 
-		WebDriver drv = new ChromeDriver();
+
+
+		ChromeOptions options = new ChromeOptions();
+		boolean headless = Boolean.parseBoolean(prop.getProperty("headless"));
+        if(headless) {
+			options.addArguments("--headless=new");
+		}
+		WebDriver drv = new ChromeDriver(options);
 		drv.get(prop.getProperty("URL"));
 		System.out.println(prop.get("username"));
 		System.out.println(prop.getProperty("password"));
