@@ -11,10 +11,15 @@ public void Test() throws InterruptedException {
         WebDriver drv = new ChromeDriver();
 
 
-        drv.get("https://host.hub-dev-01.hub.com/?chooseidp");
+        drv.get("https://opensource-demo.orangehrmlive.com");
         Thread.sleep(5000);
-        drv.findElement(By.xpath("//input[@id='signInName']")).sendKeys("qa-ta-dev001@sbxhubb2c.onmicrosoft.com");
-        drv.findElement(By.xpath("//input[@id='password']")).sendKeys("qa-ta-dev001@sbxhubb2c.onmicrosoft.com");
-        drv.findElement(By.xpath("//button[@id=\"next\"]")).click();
+        String username = "D\"Angelo";
+
+        String xpath = String.format("//input[@name=\"%s\"]", username);
+
+        drv.findElement(By.xpath(xpath)).sendKeys("test");
+
+        drv.findElement(By.xpath("//input[@value=\""+username+"\"]")).sendKeys("test");
+        drv.findElement(By.xpath("//input[@value='"+username+"']")).sendKeys("test");
     }
 }

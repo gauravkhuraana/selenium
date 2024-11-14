@@ -97,3 +97,19 @@ K
 src/test/java/TestNg_1.java,7\c\7ce52282e841b73a963ef4c21fd82b9724e81e96
 M
 src/test/java/gmailLogin.java,5\4\54657653a76c37a8293f12e0d6151cad18d247e5
+U
+%src/test/java/openAOpenedBrowser.java,5\9\5904f78dc609fa6d3944151af87c5253a2248a52
+Q
+!src/test/java/scrollIntoView.java,9\c\9cc8ae197f7ce44a4db90fb9b9434c52a455f46a
+C
+azure-pipelines.yml,4\0\40ebc6823f24f296c0cd3fddd6ccda69b74ff2e4
+P
+ src/test/java/untrustedSite.java,9\4\94709a66ca661403326d2083b7a433052698f1d2
+O
+src/test/java/useBaseClass.java,2\6\26915da4e111b870ca5f6d099120e681cef7bf45
+S
+#src/test/java/vanishingElement.java,e\c\ecd895071624439a576cca54ff3126915a36d433
+N
+src/test/java/ReadToolTip.java,7\a\7ae2474a3d16d85419fc34082871ac8192e12753
+P
+ src/test/java/windowHandles.java,2\3\233b78bb7925dd5e38ca96428a292003ad07dc47
