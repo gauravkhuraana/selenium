@@ -1,4 +1,4 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,7 +20,6 @@ public class seleniumGrid
     @Test
     public void runTestOnChrome()
     {
-        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.get("https://google.com");
     }
@@ -28,7 +27,6 @@ public class seleniumGrid
     @Test
     public void runTestOnfirefox()
     {
-        WebDriverManager.firefoxdriver().setup();
         driver = new FirefoxDriver();
         driver.get("https://google.com");
     }
@@ -36,14 +34,15 @@ public class seleniumGrid
     @Test
     public void runTestOnEdge()
     {
-        WebDriverManager.edgedriver().setup();
         driver = new EdgeDriver();
         driver.get("https://google.com");
+        // to get details logging for Chrome driver
+        System.setProperty("webdriver.chrome.verboseLogging", "true");
+
     }
 
     @Test
     public void runTestOnChromeSgrid() throws MalformedURLException {
-        WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
         //chromeOptions.setCapability("browserVersion", "100");
         //chromeOptions.setCapability("platformName", "Windows");
@@ -55,7 +54,6 @@ public class seleniumGrid
 
     @Test
     public void runTestOnFirefoxSgrid() throws MalformedURLException {
-        WebDriverManager.firefoxdriver().setup();
         FirefoxOptions firefoxOptions = new FirefoxOptions();
         driver = new RemoteWebDriver(new URL("http://localhost:4444"),firefoxOptions);
         driver.get("https://google.com");
@@ -63,7 +61,6 @@ public class seleniumGrid
 
     @Test
     public void runTestOnEdgeSgrid() throws MalformedURLException {
-        WebDriverManager.edgedriver().setup();
         EdgeOptions edgeOptions = new EdgeOptions();
         driver = new RemoteWebDriver(new URL("http://localhost:4444"),edgeOptions);
         driver.get("https://google.com");

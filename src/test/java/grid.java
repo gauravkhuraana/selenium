@@ -1,4 +1,4 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.assertj.core.api.Assertions;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -7,12 +7,13 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
+import java.time.Duration;
+
 public class grid {
 
 
     @Test
     public static void gridTest() throws InterruptedException {
-        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://generic-ui.com/demo");
@@ -43,8 +44,9 @@ public class grid {
         //click on the first row on grid
         driver.findElement(By.xpath("(//gui-view-text[@class='gui-text-view gui-italic'])[1]")).click();
 
-        WebDriverWait wait=new WebDriverWait(driver,20) ;
-        WebElement element1 = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//gui-view-text[@class='gui-text-view gui-italic'])[1]")));
+        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(20)) ;
+        WebElement element1 = new WebDriverWait(driver, Duration.ofSeconds(20))
+                .until(ExpectedConditions.elementToBeClickable(By.xpath("(//gui-view-text[@class='gui-text-view gui-italic'])[1]")));
 
 
         // Try to scoll till end to check if the last number is 100

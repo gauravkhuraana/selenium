@@ -14,7 +14,7 @@ public class screenshot1 {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		System.setProperty("webdriver.chrome.driver","D:\\software\\chromedriver_win32\\chromedriver.exe");
+		
 
 		WebDriver drv = new ChromeDriver();
 		drv.get("http:\\www.udzial.com");

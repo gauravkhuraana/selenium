@@ -10,7 +10,7 @@ public class trackorders {
 	@Test
 	public void test() throws InterruptedException
 	{
-	System.setProperty("webdriver.chrome.driver","D:\\software\\chromedriver_win32\\chromedriver.exe");
+	
 
 	WebDriver drv = new ChromeDriver();
 	drv.get("http:\\www.flipkart.com");

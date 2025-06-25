@@ -16,7 +16,7 @@ public class jQueryDropDwown {
 	public void test()
 	{
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+	
 		WebDriver drv=new ChromeDriver();
 		drv.get("http://only-testing-blog.blogspot.in/2014/09/selectable.html");
 		

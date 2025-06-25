@@ -13,7 +13,7 @@ public class pageLoad {
 	@BeforeClass
 	public void setup()
 	{
-		System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+	
 
 		drv = new ChromeDriver();
 		drv.get("http://only-testing-blog.blogspot.in/2014/04/calc.html");

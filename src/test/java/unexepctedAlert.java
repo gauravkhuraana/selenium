@@ -1,5 +1,6 @@
 
 
+import java.time.Duration;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
@@ -15,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class unexepctedAlert {
 
-	public static void main(String[] args) throws InterruptedException {
+	public void Test() {
 		// TODO Auto-generated method stub
 		
 		
@@ -29,7 +30,7 @@ public class unexepctedAlert {
     	WebDriver drv = new FirefoxDriver(cap);*/
     	
 
-		System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+	
 		WebDriver drv = new ChromeDriver();
     	drv.manage().window().maximize();
     	drv.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
@@ -40,7 +41,7 @@ public class unexepctedAlert {
     	
     	try
     	{
-    		WebDriverWait wait=new WebDriverWait(drv, 20);
+    		WebDriverWait wait=new WebDriverWait(drv, Duration.ofSeconds(20));
     		//FluentWait fwt = new FluentWait(drv).withTimeout(30, TimeUnit.SECONDS).pollingEvery(5, TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
     		
     		//Alert alrt=(Alert)fwt.until(ExpectedConditions.alertIsPresent());

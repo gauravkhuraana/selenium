@@ -1,8 +1,5 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.DataProvider;
@@ -17,9 +14,8 @@ public class RunTestInDockerViaSelenium {
     @Test
     public void openGoogle() throws MalformedURLException, InterruptedException {
 
-        WebDriverManager.chromedriver().setup();
         DesiredCapabilities cap = new DesiredCapabilities();
-        cap.setBrowserName(BrowserType.CHROME);
+        //cap.setBrowserName(BrowserType.CHROME);
         WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4446/wd/hub"),cap);
 
         String baseurl ="https://www.google.com/";
@@ -34,9 +30,8 @@ public class RunTestInDockerViaSelenium {
     @Test
     public void openGoogleSecond() throws MalformedURLException, InterruptedException {
 
-        WebDriverManager.chromedriver().setup();
         DesiredCapabilities cap = new DesiredCapabilities();
-        cap.setBrowserName(BrowserType.FIREFOX);
+        cap.setBrowserName("Firefox");
         WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4449/wd/hub"),cap);
 
         String baseurl ="https://www.google.com/";
@@ -51,7 +46,6 @@ public class RunTestInDockerViaSelenium {
     @Test(dataProvider = "getData")
     public void DataProviderUsed(String browser) throws MalformedURLException, InterruptedException {
 
-        WebDriverManager.chromedriver().setup();
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setBrowserName(browser);
         WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4448/wd/hub"),cap);
@@ -75,7 +69,6 @@ public class RunTestInDockerViaSelenium {
     @Test(dataProvider = "getData2")
     public void DataProviderUsedWithVersion(String browser,String version) throws MalformedURLException, InterruptedException {
 
-        WebDriverManager.chromedriver().setup();
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setBrowserName(browser);
         cap.setVersion(version);

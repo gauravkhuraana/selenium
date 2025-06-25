@@ -1,7 +1,6 @@
 
 import java.util.concurrent.TimeUnit;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -24,7 +23,6 @@ public class Alerts {
 	{
 		//System.setProperty("webdriver.gecko.driver", "D:\\software\\geckodriver-v0.11.1-win64\\geckodriver.exe");
 
-		WebDriverManager.firefoxdriver();
 
 		WebDriver drv = new FirefoxDriver();
 		//DesiredCapabilities cap = DesiredCapabilities.

@@ -19,7 +19,7 @@ public class dateSelector {
 	@Test
 	public void setup() throws InterruptedException
 	{
-		System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+	
 
 		drv = new ChromeDriver();
 		

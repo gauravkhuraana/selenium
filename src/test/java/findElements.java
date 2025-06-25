@@ -16,7 +16,7 @@ public class findElements {
 	public void findelement()
 	{
 		
-		System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+	
 		WebDriver drv = new ChromeDriver();
 		
 		drv.get("http://jqueryui.com/");

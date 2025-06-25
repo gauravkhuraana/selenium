@@ -1,21 +1,20 @@
 
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-;
+import org.testng.annotations.Test;
+
 
 public class dateSelection {
-public static void main(String[] args) throws InterruptedException {
-System.setProperty("webdriver.chrome.driver", "d:\\software\\chromedriver_win32\\chromedriver.exe") ;
+@Test
+public void Test() throws InterruptedException {
 WebDriver driver = new ChromeDriver();
 driver.get("https://www.makemytrip.com/");
 
 WebElement Depart = driver.findElement(By.xpath(".//*[@id='hp-widget__depart']"));
-Thread.sleep(5000);
 Depart.click();
 List<WebElement> Data = driver.findElements(By.xpath(".//*[@class='dateFilter hasDatepicker']/div//div[1]//table//td//a")) ;
 int size = Data.size() ;

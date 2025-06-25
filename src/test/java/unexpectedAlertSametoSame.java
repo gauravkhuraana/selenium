@@ -16,7 +16,7 @@ public class unexpectedAlertSametoSame {
 	 @BeforeTest
 	 public void setup() throws Exception {
 		 
-			System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+		
 			WebDriver driver = new ChromeDriver();
 	//  driver =new FirefoxDriver();     
 	  driver.manage().window().maximize();

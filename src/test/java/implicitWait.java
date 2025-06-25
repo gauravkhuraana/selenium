@@ -13,7 +13,7 @@ public class implicitWait {
 	@Test
 	public static void test()
 	{
-		System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+	
 		WebDriver drv = new ChromeDriver();
 		drv.get("http:\\www.google.com");
 		drv.manage().window().maximize();

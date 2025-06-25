@@ -13,7 +13,7 @@ public class dataDriven {
 	@Test(dataProvider="testdata")
 	public void twice(String uname,String passwd) throws InterruptedException
 	{
-		System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+	
 		WebDriver drv = new ChromeDriver();
 		
 		drv.get("http://newtours.demoaut.com/");

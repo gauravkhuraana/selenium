@@ -2,18 +2,16 @@
 // How to check if all links on a website are running fine (returning 2** Messages) Rather than 4** or 5** error messages via selenium / URL / HttpURLConnection
 import java.io.IOException;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
-import org.apache.http.HttpConnection;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-;
+
 
 
 public class brokenlinks {
@@ -21,7 +19,6 @@ public class brokenlinks {
 	static public  void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		System.setProperty("webdriver.chrome.driver","D:\\software\\chromedriver_win32\\chromedriver.exe" );
 		WebDriver drv = new ChromeDriver();
 		
 		drv.get("http:\\www.google.com");
@@ -36,7 +33,7 @@ public class brokenlinks {
 	    	WebElement el = links.get(i);
 	    	Actions act = new Actions(drv);
 	    	act.keyDown(Keys.SHIFT).click(el).build().perform();
-	    	String str=null;
+	    	String str;
 	    	try
 	    	{
 	    	str=el.getAttribute("href");

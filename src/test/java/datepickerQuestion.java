@@ -7,14 +7,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 ;
 
 public class datepickerQuestion {
 
-	public static void main(String[] args) throws InterruptedException {
+	@Test
+public void Test() {
 		// TODO Auto-generated method stub
 
-		System.setProperty("webdriver.chrome.driver", "d:\\software\\chromedriver_win32\\chromedriver.exe") ;
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("http://www.phptravels.net/");

@@ -13,7 +13,7 @@ public class driver {
 
 	public static void main(String[] args )
 	{
-		System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+	
 		//WebDriver drv = new ChromeDriver();
 		//drv.get("http://www.naukri.com");
 		

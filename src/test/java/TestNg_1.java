@@ -1,6 +1,5 @@
 
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.WebDriver;
@@ -19,8 +18,8 @@ public class TestNg_1 {
     }
     @BeforeMethod
     public void beforeMethod() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Software\\chromedrive\\chromedriver.exe");
-       // WebDriverManager.chromedriver().setup();
+        
+       // ;
         driver = new ChromeDriver();
         driver.quit();
     }

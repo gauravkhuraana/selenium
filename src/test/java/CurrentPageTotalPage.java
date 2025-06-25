@@ -12,7 +12,7 @@ public class CurrentPageTotalPage {
 		// TODO Auto-generated method stub
 	//	System.out.println(" The current and total pages are " + result);
 
-		System.setProperty("webdriver.chrome.driver", "D:\\software\\chromedriver_win32\\chromedriver.exe");
+	
 		WebDriver drv = new ChromeDriver();
 		drv.get("http://www.amazon.in/s/ref=sr_pg_3?rh=n%3A976389031%2Ck%3Ashoes&page=3&keywords=shoes&ie=UTF8&qid=1498705578&spIA=1333873328,1332105327,3659770345,1440061440");
 		

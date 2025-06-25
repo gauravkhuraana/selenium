@@ -1,4 +1,4 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,7 +15,7 @@ public class openAOpenedBrowser {
 //
 //        System.out.println("Hare Krishna");
 //
-//        WebDriverManager.chromedriver().setup();
+//        ;
 //
 //        ChromeOptions options = new ChromeOptions();
 //        options.setExperimentalOption("debuggerAddress","127.0.0.1:9222");
@@ -23,7 +23,7 @@ public class openAOpenedBrowser {
 //
 //        drv.findElement(By.xpath("//li[@id='menu-item-573']//a[normalize-space()='Subscribe']")).click();
 
-        WebDriverManager.chromedriver().setup();
+        ;
 
         WebDriver driver = new FirefoxDriver();
         String baseurl ="https://www.google.com/";
